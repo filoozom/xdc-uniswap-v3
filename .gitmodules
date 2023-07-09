@@ -1,0 +1,9 @@
+[submodule "interface"]
+	path = interface
+	url = https://github.com/Uniswap/interface.git
+[submodule "deploy-v3"]
+	path = deploy-v3
+	url = https://github.com/Uniswap/deploy-v3.git
+[submodule "v3-subgraph"]
+	path = v3-subgraph
+	url = https://github.com/Uniswap/v3-subgraph.git
