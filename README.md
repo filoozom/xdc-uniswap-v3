@@ -123,6 +123,9 @@ Resulting state (deployed by `0xBC4787Cb82060da29f85fe6C0dA03436019329e7`):
 cd v3-subgraph
 yarn
 
+# Copy config file
+cp ../subgraph.yaml .
+
 # Build
 npm run codegen
 npm run build
