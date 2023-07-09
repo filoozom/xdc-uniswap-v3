@@ -1,6 +1,6 @@
 # XDSwap
 
-XDSwap is a Uniswap fork deployed to XDC mainnet.
+XDSwap is a Uniswap fork deployed to XDC mainnet. Due to lack of time and a late start, I wasn't able to finalize the deployment of the Uniswap interface.
 
 ## Infrastructure
 
