@@ -94,7 +94,26 @@ node dist/index.js \
     --json-rpc https://erpc.xinfin.network \
     --weth9-address 0x951857744785E80e2De051c32EE7b25f9c458C42 \
     --native-currency-label XDC \
-    --owner-address $OWNER
+    --owner-address 0xBC4787Cb82060da29f85fe6C0dA03436019329e7
+```
+
+Resulting state (deployed by `0xBC4787Cb82060da29f85fe6C0dA03436019329e7`):
+
+```json
+{
+  "v3CoreFactoryAddress": "0x3A586887C7cE970157A56f89C180246a3258C6dF",
+  "multicall2Address": "0xccca48b4c78Ab89398BB54BB3b0AB67fDF6AcD0E",
+  "proxyAdminAddress": "0x897834930A7f3692a364a5077C69b1B44995Fe73",
+  "tickLensAddress": "0xBA7dE62De38c37Ee2B229C732C238C119685b765",
+  "nftDescriptorLibraryAddressV1_3_0": "0x37F687BDccD588Df1fC7D3F1D1e573F315ecC782",
+  "nonfungibleTokenPositionDescriptorAddressV1_3_0": "0xd0cDA7F02d0719B9819098Db05ec3901a00A5083",
+  "descriptorProxyAddress": "0x317e6B3e7AF4c78dcEe0E03ac9a0a7f409d7BC06",
+  "nonfungibleTokenPositionManagerAddress": "0x4eF22247EaD0C966C232e7f8F45057A9540ad7F4",
+  "v3MigratorAddress": "0x99d5D8dd09c7eEa021BD4Ae743f376AAB3D655fa",
+  "v3StakerAddress": "0x8f4C0b48db153b72CD0097758701C3B22d36947D",
+  "quoterV2Address": "0x2450fFA63b3ea23026A0fA77bBC5f11C72D11CBa",
+  "swapRouter02": "0x835dD71196d0F76CfE7F9B004698c5CB1C551eff"
+}
 ```
 
 ### Deploy the subgraphs
@@ -109,6 +128,6 @@ npm run codegen
 npm run build
 
 # Deploy
-graph create ianlapham/uniswap-v3 --node http://37.187.27.137:8020
-graph deploy ianlapham/uniswap-v3 --debug --ipfs http://37.187.27.137:5001 --node http://37.187.27.137:8020
+npx graph create ianlapham/uniswap-v3 --node http://37.187.27.137:8020
+npx graph deploy ianlapham/uniswap-v3 --debug --ipfs http://37.187.27.137:5001 --node http://37.187.27.137:8020
 ```
